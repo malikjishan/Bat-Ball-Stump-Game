@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+.Choice{
+    display: flex;
+    height: 50px;
+    margin: 10px;
+    
+}
+.your-choice{
+    border: none;
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+}

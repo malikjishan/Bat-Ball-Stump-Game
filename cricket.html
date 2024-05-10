@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <title>Cricket game</title>
+   <link rel="stylesheet" href="cricket.css">
+</head>
+
+<body>
+   <h1>Bat Ball Stump game</h1>
+   <button onclick="getComputerChoice();
+     let resultMsg=getResult('Bat',computerChoice)
+     showResult('Bat',computerChoice,resultMsg);
+     " class="your-choice"><img src="bat.png" alt="Bat Image" class="Choice"></button>
+   <button onclick="
+     getComputerChoice();
+     resultMsg=getResult('Ball',computerChoice)
+     showResult('Ball',computerChoice,resultMsg);
+     "  class="your-choice"><img src="ball.png" alt="Ball Image" class="Choice"></button>
+     <button onclick="
+     getComputerChoice();
+     resultMsg=getResult('Stump',computerChoice)
+     showResult('Stump',computerChoice,resultMsg);
+     "  class="your-choice"><img src="stump.png" alt="Stump Image" class="Choice"></button>
+   
+     <h3 id="user-move"></h3>
+     <h3 id="computer-move"></h3>
+     <h3 id="result"></h3>
+     <h3 id="score"></h3>
+     
+   <button onclick="localStorage.clear()
+      resetScore();
+     ">Reset</button>
+   
+      <script src="cricket.js"></script>
+   
+</body>
+
+</html>
